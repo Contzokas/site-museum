@@ -23,7 +23,16 @@ export async function generateMetadata({ params }) {
       title,
       description,
       type: "article",
+      url: `/perigisi/${space.slug}`,
+      siteName,
+      locale: "el_GR",
       images: [{ url: space.cover, alt: `${space.section} · ${space.title}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [space.cover],
     },
   };
 }

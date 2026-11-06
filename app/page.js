@@ -46,7 +46,7 @@ export default function Home() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <header className="nav">
         <a className="brand" href="#top"><img src="/assets/museum-emblem.png" alt="Έμβλημα 21ης Τεθωρακισμένης Ταξιαρχίας" /><span>Στρατιωτικό Μουσείο<small>Κομοτηνή</small></span></a>
         <nav className="links"><a href="#museum">Το Μουσείο</a><a href="#tour">Περιήγηση</a><a href="#collections">Συλλογές</a><a href="#visit">Επίσκεψη</a></nav>
