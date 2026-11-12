@@ -9,6 +9,7 @@ export const metadata = {
   },
   description: siteDescription,
   applicationName: siteName,
+  verification: { google: "W3Fv-eUGbnMxCeAUybs98udF77yjGBlk889givhD55I" },
   keywords: ["Στρατιωτικό Μουσείο Κομοτηνής", "μουσείο Κομοτηνής", "στρατιωτική ιστορία", "Θράκη", "εκθέματα"],
   authors: [{ name: siteName }],
   creator: siteName,
