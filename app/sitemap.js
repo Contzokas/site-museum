@@ -7,7 +7,7 @@ export default function sitemap() {
       url: siteUrl,
       changeFrequency: "monthly",
       priority: 1,
-      images: [`${siteUrl}/assets/hero.png`],
+      images: [`${siteUrl}/assets/hero.png`, `${siteUrl}/assets/modelism-poster.webp`],
     },
     ...tourSpaces.map((space) => ({
       url: `${siteUrl}/perigisi/${space.slug}`,

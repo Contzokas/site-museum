@@ -10,7 +10,7 @@ export const metadata = {
   description: siteDescription,
   applicationName: siteName,
   verification: { google: "W3Fv-eUGbnMxCeAUybs98udF77yjGBlk889givhD55I" },
-  keywords: ["Στρατιωτικό Μουσείο Κομοτηνής", "μουσείο Κομοτηνής", "στρατιωτική ιστορία", "Θράκη", "εκθέματα"],
+  keywords: ["Στρατιωτικό Μουσείο Κομοτηνής", "μουσείο Κομοτηνής", "στρατιωτική ιστορία", "Θράκη", "εκθέματα", "Έκθεση Στατικού Μοντελισμού", "μοντελισμός Κομοτηνή", "εκδηλώσεις Κομοτηνή"],
   authors: [{ name: siteName }],
   creator: siteName,
   publisher: siteName,

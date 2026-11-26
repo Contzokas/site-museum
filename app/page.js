@@ -44,9 +44,28 @@ export default function Home() {
     inLanguage: "el",
   };
 
+  const eventData = {
+    "@context": "https://schema.org",
+    "@type": "ExhibitionEvent",
+    name: "1η Έκθεση Στατικού Μοντελισμού",
+    description: "Έκθεση στατικού μοντελισμού με άρματα, αεροσκάφη, πλοία και διοράματα στο Στρατιωτικό Μουσείο Κομοτηνής. Είσοδος ελεύθερη.",
+    startDate: "2026-12-07T09:00:00+02:00",
+    endDate: "2026-12-11T14:00:00+02:00",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    image: `${siteUrl}/assets/modelism-poster.webp`,
+    url: `${siteUrl}/#events`,
+    inLanguage: "el",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR", availability: "https://schema.org/InStock", url: `${siteUrl}/#events` },
+    location: { "@type": "Museum", name: siteName, address: structuredData.address },
+    organizer: { "@type": "Organization", name: siteName, url: siteUrl },
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventData).replace(/</g, "\\u003c") }} />
       <header className="nav">
         <a className="brand" href="#top"><img src="/assets/museum-emblem.png" alt="Έμβλημα 21ης Τεθωρακισμένης Ταξιαρχίας" /><span>Στρατιωτικό Μουσείο<small>Κομοτηνή</small></span></a>
         <nav className="links"><a href="#museum">Το Μουσείο</a><a href="#tour">Περιήγηση</a><a href="#collections">Συλλογές</a><a href="#events">Εκδηλώσεις</a><a href="#visit">Επίσκεψη</a></nav>
