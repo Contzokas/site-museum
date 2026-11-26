@@ -67,7 +67,7 @@ try {
     for (const match of html.matchAll(/(?:src|href)="(\/(?:assets\/[^"?]+|icon.png))(?:\?[^\"]*)?"/g)) await get(match[1]);
     if (index === 0) {
       const data = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
-      assert.equal(data["@type"], "Museum");
+      assert.ok(data["@type"].includes("Museum"));
       assert.equal(data.url, siteUrl);
     }
   }

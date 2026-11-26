@@ -4,7 +4,7 @@ import { siteDescription, siteName, siteUrl } from "./site-config";
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: siteName,
+    default: `${siteName} | Εκθέματα, Ιστορία, Ωράριο και Εκδηλώσεις`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
@@ -34,5 +34,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="el"><body>{children}</body></html>;
+  return <html lang="el"><head><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" /></head><body>{children}</body></html>;
 }
